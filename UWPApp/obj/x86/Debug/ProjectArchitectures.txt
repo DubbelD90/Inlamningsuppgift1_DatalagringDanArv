@@ -1,0 +1,2 @@
+C:\Users\dcloc\source\repos\Inlamningsuppgift1_DatalagringDanArv\SharedLibrary\SharedLibrary.csproj;x86
+C:\Users\dcloc\source\repos\Inlamningsuppgift1_DatalagringDanArv\UWPApp\UWPApp.csproj;x86

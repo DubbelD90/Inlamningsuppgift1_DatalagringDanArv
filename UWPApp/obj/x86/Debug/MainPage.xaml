@@ -1,0 +1,74 @@
+﻿<Page
+    x:Class="UWPApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWPApp"
+    
+    xmlns:models="using:SharedLibrary.Models"
+    
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="AliceBlue">
+        <Grid.Resources>
+            <models:FileTypes x:Key="filetypes"/>
+        </Grid.Resources>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="0.5*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+
+
+        <StackPanel Grid.Column="0" Margin="20">
+            <TextBox x:ConnectionId='5' TabIndex="0" x:Name="tbFirstName" Margin="0,20" Padding="5" PlaceholderText="Enter Your FirstName" PlaceholderForeground="LightGray" FontSize="30" Text="" />
+            <TextBox x:ConnectionId='6' TabIndex="1" x:Name="tbLastName" Margin="0,20" Padding="5" PlaceholderText="Enter Your LastName" PlaceholderForeground="LightGray" FontSize="30" Text=""/>
+            <TextBox x:ConnectionId='7' TabIndex="2" x:Name="tbAge" Margin="0,20" Padding="5" PlaceholderText="Enter Your Age" PlaceholderForeground="LightGray" FontSize="30" Text=""/>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+
+                <Button x:ConnectionId='11' x:Name="btnAddJson"                          Margin="10" BorderBrush="Gray">
+                    <TextBlock Text="Add to Json" FontSize="20" Foreground="Black"/>
+                </Button>
+                <Button x:ConnectionId='12' x:Name="btnAddCsv"                         Margin="10" BorderBrush="Gray">
+                    <TextBlock Text="Add to CSV" FontSize="20" Foreground="Black"/>
+                </Button>
+                <Button x:ConnectionId='13' x:Name="btnAddXml"                         Margin="10" BorderBrush="Gray">
+                    <TextBlock Text="Add to XML" FontSize="20" Foreground="Black"/>
+                </Button>
+                <Button x:ConnectionId='14' x:Name="btnAddTxt"                         Margin="10" BorderBrush="Gray">
+                    <TextBlock Text="Add to txt" FontSize="20" Foreground="Black"/>
+                </Button>
+
+            </StackPanel>
+            <TextBox x:ConnectionId='8' TabIndex="0" x:Name="tbFileName" Margin="0,200,10,0" Padding="5" PlaceholderText="Enter Filename" PlaceholderForeground="White" FontSize="20" HorizontalAlignment="Right" Width="300" Text=""/>
+            <ComboBox x:ConnectionId='9' ItemsSource="{StaticResource filetypes}" x:Name="cbFile" HorizontalAlignment="Right" PlaceholderText="Choose filetype to Create" PlaceholderForeground="White" FontSize="20" Margin="10,10" Padding="5" Width="300"/>
+            <Button x:ConnectionId='10' x:Name="btnAddFile"                          BorderBrush="Gray" HorizontalAlignment="Right" Margin="10,0" Width="300">
+                <TextBlock Text="Create file" FontSize="20" Foreground="Black"/>
+            </Button>
+
+        </StackPanel>
+
+
+        <ListView x:ConnectionId='2' Grid.Column="1" Grid.Row="0" x:Name="lvOutput" HorizontalAlignment="Stretch" Margin="20" VerticalAlignment="Stretch">
+            <TextBlock x:ConnectionId='4' x:Name="tbListView" Text="" FontSize="20" Foreground="Black"/>
+        </ListView>
+
+        <Button x:ConnectionId='3' Grid.Column="1" Grid.Row="1" x:Name="btnReadFile"                           Margin="30" BorderBrush="Gray" HorizontalAlignment="Center">
+            <TextBlock Text="Choose a file to read from" FontSize="20" Foreground="Black"/>
+        </Button>
+
+
+
+
+    </Grid>
+</Page>
+
