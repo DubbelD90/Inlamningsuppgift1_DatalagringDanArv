@@ -121,6 +121,10 @@
             "Microsoft.NETCore.UniversalWindowsPlatform": {
               "target": "Package",
               "version": "[6.2.10, )"
+            },
+            "Microsoft.NETCore.UniversalWindowsPlatform": {
+              "target": "Package",
+              "version": "[6.2.10, )"
             }
           },
           "imports": [

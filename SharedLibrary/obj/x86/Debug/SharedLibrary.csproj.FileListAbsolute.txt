@@ -30,7 +30,6 @@ C:\Users\dcloc\source\repos\Inlamningsuppgift1_DatalagringDanArv\SharedLibrary\b
 C:\Users\dcloc\source\repos\Inlamningsuppgift1_DatalagringDanArv\SharedLibrary\bin\x86\Debug\SharedLibrary.pdb
 C:\Users\dcloc\source\repos\Inlamningsuppgift1_DatalagringDanArv\SharedLibrary\bin\x86\Debug\SharedLibrary.pri
 C:\Users\dcloc\source\repos\Inlamningsuppgift1_DatalagringDanArv\SharedLibrary\bin\x86\Debug\Microsoft.UI.Xaml.Markup.winmd
-C:\Users\dcloc\source\repos\Inlamningsuppgift1_DatalagringDanArv\SharedLibrary\obj\x86\Debug\SharedLibrary.csprojAssemblyReference.cache
 C:\Users\dcloc\source\repos\Inlamningsuppgift1_DatalagringDanArv\SharedLibrary\obj\x86\Debug\SharedLibrary.csproj.CoreCompileInputs.cache
 C:\Users\dcloc\source\repos\Inlamningsuppgift1_DatalagringDanArv\SharedLibrary\obj\x86\Debug\SharedLibrary.csproj.CopyComplete
 C:\Users\dcloc\source\repos\Inlamningsuppgift1_DatalagringDanArv\SharedLibrary\obj\x86\Debug\Microsoft.UI.Xaml.pri.xml
@@ -52,3 +51,4 @@ C:\Users\dcloc\source\repos\Inlamningsuppgift1_DatalagringDanArv\SharedLibrary\o
 C:\Users\dcloc\source\repos\Inlamningsuppgift1_DatalagringDanArv\SharedLibrary\obj\x86\Debug\qualifiers.txt
 C:\Users\dcloc\source\repos\Inlamningsuppgift1_DatalagringDanArv\SharedLibrary\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\dcloc\source\repos\Inlamningsuppgift1_DatalagringDanArv\SharedLibrary\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\dcloc\source\repos\Inlamningsuppgift1_DatalagringDanArv\SharedLibrary\obj\x86\Debug\SharedLibrary.csprojAssemblyReference.cache

@@ -60,59 +60,18 @@ namespace SharedLibrary.Helpers
                         return $"{data[0]} {data[1]} { data[2]}";
                     }
                     */
-                    //await FileIO.ReadLinesAsync(storageFile);
+                    await FileIO.ReadLinesAsync(storageFile);
                 }
                 else if (ext[1] == "txt")
                 {
                     return await FileIO.ReadTextAsync(storageFile);
                 }
-
             }
             else
             {
                 return "Failed. Try choosing one of following filetypes: Json, XML, CSV or txt";
             }
-
             return await FileIO.ReadTextAsync(storageFile);
-            /*
-            if (storageFile != null)
-            {
-
-                if (storageFile.ContentType == "text/xml")
-                {
-                    string text = await FileIO.ReadTextAsync(storageFile);
-                    XmlDocument xmlDoc = new XmlDocument();
-                    xmlDoc.LoadXml(text);
-
-                    foreach (XmlNode node in xmlDoc.DocumentElement.ChildNodes)
-                    {
-                        string textoutput = node.InnerText;
-
-                        try
-                        {
-                            tbListView.Text = textoutput;
-                        }
-                        catch { }
-                    }
-                }
-                else if (file.ContentType == "application/json")
-                {
-                    var path = storageFile.Path;
-                    string text = await FileIO.ReadTextAsync(storageFile);
-                    var obj = JsonConvert.DeserializeObject<dynamic>(text);
-
-                    try
-                    {
-                        tbListView.Text = obj.message;
-                    }
-                    catch { }
-                }
-            }
-            else
-            {
-                this.tbListView.Text = "Operation cancelled";
-            }
-            */
         }
     }
 }
